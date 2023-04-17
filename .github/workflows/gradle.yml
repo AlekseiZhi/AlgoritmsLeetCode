@@ -8,7 +8,7 @@
 name: TestCi
 
 env:
- APPLICATION_NAME       : "MyName" 
+ APPLICATION_NAME       : "Me" 
  DEPLOY_PACKAJE_NAME    : "Name-for-Deploy-ver-${{ github.sha }}"
 
 on:
