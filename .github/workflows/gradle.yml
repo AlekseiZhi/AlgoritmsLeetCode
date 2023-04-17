@@ -54,7 +54,7 @@ jobs:
        run: |
          echo "Var1 = ${{env.VAR1}}"
          echo "Var2 = ${{env.VAR2}}"
-         echo: "Print Local Var ${{ env.LOCAL_VAR}}"
+         echo "Print Local Var ${{ env.LOCAL_VAR}}"
        env:
          LOCAL_VAR: "this is super local var"
        
