@@ -64,3 +64,6 @@ jobs:
        
      - name: Lets test some zip
        run: zip --version
+       
+     - name: ctobi ti robotal
+       run: echo "rabotai ne pozor"
