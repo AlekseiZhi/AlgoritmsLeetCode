@@ -7,6 +7,10 @@
 
 name: TestCi
 
+env:
+ APPLICATION_NAME       : "MyName" 
+ DEPLOY_PACKAJE_NAME    : "Name-for-Deploy-ver-${{ github.sha }}"
+
 on:
   push:
    branches: 
@@ -19,6 +23,12 @@ jobs:
     steps:
     - name: Print Hello Message in test
       run: echo "Hello World from testing myTest job"
+    
+    - name: Execure few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 2"
+        echo "Application name: ${{ env.APPLICATION_NAME }}"
         
         
         
@@ -28,3 +38,6 @@ jobs:
    steps:
      - name: Print Hello Message in deploy
        run: echo "Hello World from Deploy job"
+       
+     - name: Deployment package
+       run: echo "Deploy package name is ${{ env.DEPLOY_PACKAJE_NAME }}"
