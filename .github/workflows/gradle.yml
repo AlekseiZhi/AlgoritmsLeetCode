@@ -47,9 +47,7 @@ jobs:
      VAR2: "this is job variable2"
      
    steps:
-     - name: First task from deploy
-       run: echo "Hello World from Deploy job"
-       
+      
      - name: Print env vars
        run: |
          echo "Var1 = ${{env.VAR1}}"
